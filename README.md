@@ -10,7 +10,7 @@ This packaged is built using .NET Standard 2.0 and is compatible with the CMSApp
 
 This package is not currently available on nuget.
 
-## Extension Methods
+## Included in the package
 
 ### Scheduled Tasks
 
@@ -25,3 +25,9 @@ Can be scheduled as necessary or run on demand.
 This task will automatically remove older versions of objects and pages. As per the version retention settings configured in the Kentico settings module.
 
 This task is expected to be run on demand in instances where the number of retention versions is reduced in the Kentico settings.
+
+### Helpers
+
+#### CustomCrawlerChecker
+
+This is a custom implementation of the ICrawlerChecker from Kentico. This instance can be used as an example of how to include additional keywords in the crawler user agent check in order to prevent features such as contact creation and online marketing activities from initialising.
